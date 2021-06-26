@@ -23,3 +23,8 @@ The ExampleValidator pipeline component identifies any anomalies in the example 
 
 * Consumes: A schema from a SchemaGen component, and statistics from a StatisticsGen component.
 * Emits: Validation results
+
+## The Transform TFX Pipeline Component
+The Transform TFX pipeline component performs feature engineering on tf.Examples emitted from an ExampleGen component, using a data schema created by a SchemaGen component, and emits both a SavedModel as well as statistics on both pre-transform and post-transform data. When executed, the SavedModel will accept tf.Examples emitted from an ExampleGen component and emit the transformed feature data.
+* Consumes: tf.Examples from an ExampleGen component, and a data schema from a SchemaGen component.
+* Emits: A SavedModel to a Trainer component, pre-transform and post-transform statistics.
