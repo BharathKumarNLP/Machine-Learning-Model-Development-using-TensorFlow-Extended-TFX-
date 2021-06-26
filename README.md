@@ -14,3 +14,9 @@ Some TFX components use a description of your input data called a schema. The sc
 * Consumes: statistics from a StatisticsGen component
 * Emits: Data schema proto
 
+## The ExampleValidator TFX Pipeline Component
+The ExampleValidator pipeline component identifies anomalies in training and serving data. It can detect different classes of anomalies in the data. For example it can:
+
+perform validity checks by comparing data statistics against a schema that codifies expectations of the user
+detect training-serving skew by comparing training and serving data.
+detect data drift by looking at a series of data.
