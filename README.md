@@ -20,7 +20,6 @@ detect training-serving skew by comparing training and serving data.
 detect data drift by looking at a series of data.
 
 The ExampleValidator pipeline component identifies any anomalies in the example data by comparing data statistics computed by the StatisticsGen pipeline component against a schema. The inferred schema codifies properties which the input data is expected to satisfy, and can be modified by the developer.
-
 * Consumes: A schema from a SchemaGen component, and statistics from a StatisticsGen component.
 * Emits: Validation results
 
