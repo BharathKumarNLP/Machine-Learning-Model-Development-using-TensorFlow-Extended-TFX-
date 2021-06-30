@@ -1,4 +1,6 @@
 ## Machine Learning Model Development using TensorFlow Extended(TFX)
+### TensorFlow Extended (TFX) 
+TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines
 ### Understanding TFX Pipelines
 MLOps is the practice of applying DevOps practices to help automate, manage, and audit machine learning (ML) workflows. ML workflows include steps to:
 * Prepare, analyze, and transform data.
