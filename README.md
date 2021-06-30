@@ -2,6 +2,9 @@
 ### TensorFlow Extended (TFX) 
 TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
+
+### ML Metadata
+ML Metadata (MLMD) is a library for recording and retrieving metadata associated with ML developer and data scientist workflows. MLMD is an integral part of TensorFlow Extended (TFX), but is designed so that it can be used independently.
 ### Understanding TFX Pipelines
 MLOps is the practice of applying DevOps practices to help automate, manage, and audit machine learning (ML) workflows. ML workflows include steps to:
 * Prepare, analyze, and transform data.
