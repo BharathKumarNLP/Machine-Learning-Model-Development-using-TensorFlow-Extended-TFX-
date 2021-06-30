@@ -10,7 +10,6 @@ The StatisticsGen TFX pipeline component generates features statistics over both
 
 ### The SchemaGen TFX Pipeline Component
 Some TFX components use a description of your input data called a schema. The schema is an instance of schema.proto. It can specify data types for feature values, whether a feature has to be present in all examples, allowed value ranges, and other properties. A SchemaGen pipeline component will automatically generate a schema by inferring types, categories, and ranges from the training data.
-
 * Consumes: statistics from a StatisticsGen component
 * Emits: Data schema proto
 
