@@ -1,4 +1,10 @@
 ## Machine Learning Model Development using TensorFlow Extended(TFX)
+### Understanding TFX Pipelines
+MLOps is the practice of applying DevOps practices to help automate, manage, and audit machine learning (ML) workflows. ML workflows include steps to:
+* Prepare, analyze, and transform data.
+* Train and evaluate a model.
+*  Deploy trained models to production.
+Track ML artifacts and understand their dependencies.
 
 ### The StatisticsGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
