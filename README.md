@@ -27,3 +27,9 @@ The ExampleValidator pipeline component identifies any anomalies in the example 
 The Transform TFX pipeline component performs feature engineering on tf.Examples emitted from an ExampleGen component, using a data schema created by a SchemaGen component, and emits both a SavedModel as well as statistics on both pre-transform and post-transform data. When executed, the SavedModel will accept tf.Examples emitted from an ExampleGen component and emit the transformed feature data.
 * Consumes: tf.Examples from an ExampleGen component, and a data schema from a SchemaGen component.
 * Emits: A SavedModel to a Trainer component, pre-transform and post-transform statistics.
+
+## The Pusher TFX Pipeline Component
+The Pusher component is used to push a validated model to a deployment target during model training or re-training. Before the deployment, Pusher relies on one or more blessings from other validation components to decide whether to push the model or not.
+
+* Evaluator blesses the model if the new trained model is "good enough" to be pushed to production.
+* (Optional but recommended) InfraValidator blesses the model if the model is mechanically servable in a production environment.
