@@ -48,3 +48,7 @@ The Pusher component is used to push a validated model to a deployment target du
 
 * Evaluator blesses the model if the new trained model is "good enough" to be pushed to production.
 * (Optional but recommended) InfraValidator blesses the model if the model is mechanically servable in a production environment.
+
+### The InfraValidator TFX Pipeline Component
+InfraValidator is a TFX component that is used as an early warning layer before pushing a model into production. The name "infra" validator came from the fact that it is validating the model in the actual model serving "infrastructure". If Evaluator is to guarantee the performance of the model, InfraValidator is to guarantee the model is mechanically fine and prevents bad models from being pushed.
+
