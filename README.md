@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/23136710/124017377-51ef9900-d9ef-11eb-993b-f97738ce10ed.png)
 
 ### TensorFlow Extended (TFX) 
-TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
+TensorFlow Extended (TFX) is a Google-production-scale machine learning platform based on TensorFlow. TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
 
 ### ML Metadata
