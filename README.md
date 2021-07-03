@@ -30,6 +30,7 @@ A TFX pipeline is a sequence of components that implement an ML pipeline which i
 TFX standard components come pre-packaged with TensorFlow, and are designed to help improve your pipeline development velocity. TFX contains different python packages/libraries to create pipelines such as TensorFlow Data Validation (TFDV), TensorFlow Transform (TFT), TensorFlow Model Analysis (TFMA), etc. The image below demonstrates the link between TFX libraries and pipeline components:
 ![image](https://user-images.githubusercontent.com/23136710/124017377-51ef9900-d9ef-11eb-993b-f97738ce10ed.png)
 <center>source https://www.tensorflow.org/tfx </center><br>
+
 ### The ExampleGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
 
