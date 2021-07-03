@@ -29,7 +29,7 @@ Orchestrators automates task executions and monitors TF components. One of the l
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
 TFX standard components come pre-packaged with TensorFlow, and are designed to help improve your pipeline development velocity. TFX contains different python packages/libraries to create pipelines such as TensorFlow Data Validation (TFDV), TensorFlow Transform (TFT), TensorFlow Model Analysis (TFMA), etc. The image below demonstrates the link between TFX libraries and pipeline components:
 ![image](https://user-images.githubusercontent.com/23136710/124017377-51ef9900-d9ef-11eb-993b-f97738ce10ed.png)
-<center>source https://www.tensorflow.org/tfx </center>
+<center>source https://www.tensorflow.org/tfx </center><br>
 ### The ExampleGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
 
@@ -60,7 +60,7 @@ The Transform TFX pipeline component performs feature engineering on tf.Examples
 ### The Trainer TFX pipeline component
 The Trainer TFX pipeline component trains a TensorFlow model. The trainer component produces at least one model for inference and serving in a TensorFlow saved model format. A safe model contains a complete TensorFlow program, including weights and computation. 
 ### The Tuner TFX Pipeline Component
-The Tuner component tunes the hyperparameters for the model. The Tuner component tunes the hyperparameters for the model. The Tuner component is the newest TFX effects component and makes extensive use of the Python Keras tuner API for tuning hyper parameter. As inputs, the tuner component takes in the transformed data in transform graph artifacts, as outputs, the tuner components output a hyper parameter artifact. You can modify the trainer configurations to directly ingest the best hyper parameters, found from the most recent tuner run. 
+The Tuner component tunes the hyperparameters for the model. The Tuner component is the newest TFX effects component and makes extensive use of the Python Keras tuner API for tuning hyper parameter. As inputs, the tuner component takes in the transformed data in transform graph artifacts, as outputs, the tuner components output a hyper parameter artifact. You can modify the trainer configurations to directly ingest the best hyper parameters, found from the most recent tuner run. 
 ### The Pusher TFX Pipeline Component
 The Pusher component is used to push a validated model to a deployment target during model training or re-training. Before the deployment, Pusher relies on one or more blessings from other validation components to decide whether to push the model or not.
 
