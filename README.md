@@ -26,7 +26,9 @@ MLOps is the practice of applying DevOps practices to help automate, manage, and
 Track ML artifacts and understand their dependencies.
 ### TFX Orchestrators
 Orchestrators automates task executions and monitors TF components. One of the largest TFX Orchestrators is Apache Beam. Apache Beam is the unified batch and stream distributed API which acts as an abstraction layer to run on top of the distributed processing framework. This allows you to work on diverse backends such as Apache Spark, Local, Dataflow, etc.
-
+### How it works
+A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
+TFX standard components come pre-packaged with TensorFlow, and are designed to help improve your pipeline development velocity. TFX contains different python packages/libraries to create pipelines such as TensorFlow Data Validation (TFDV), TensorFlow Transform (TFT), TensorFlow Model Analysis (TFMA), etc. The image below demonstrates the link between TFX libraries and pipeline components:
 ### The ExampleGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
 
