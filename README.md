@@ -42,7 +42,8 @@ The ExampleValidator pipeline component identifies any anomalies in the example 
 The Transform TFX pipeline component performs feature engineering on tf.Examples emitted from an ExampleGen component, using a data schema created by a SchemaGen component, and emits both a SavedModel as well as statistics on both pre-transform and post-transform data. When executed, the SavedModel will accept tf.Examples emitted from an ExampleGen component and emit the transformed feature data.
 * Consumes: tf.Examples from an ExampleGen component, and a data schema from a SchemaGen component.
 * Emits: A SavedModel to a Trainer component, pre-transform and post-transform statistics.
-
+### The Trainer TFX pipeline component
+The Trainer TFX pipeline component trains a TensorFlow model. The trainer component produces at least one model for inference and serving in a TensorFlow saved model format. A safe model contains a complete TensorFlow program, including weights and computation. 
 ### The Tuner TFX Pipeline Component
 The Tuner component tunes the hyperparameters for the model. The Tuner component tunes the hyperparameters for the model. The Tuner component is the newest TFX effects component and makes extensive use of the Python Keras tuner API for tuning hyper parameter. As inputs, the tuner component takes in the transformed data in transform graph artifacts, as outputs, the tuner components output a hyper parameter artifact. You can modify the trainer configurations to directly ingest the best hyper parameters, found from the most recent tuner run. 
 ### The Pusher TFX Pipeline Component
