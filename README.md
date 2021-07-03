@@ -15,7 +15,7 @@ MLOps is the practice of applying DevOps practices to help automate, manage, and
 Track ML artifacts and understand their dependencies.
 ### TFX Orchestrators
 Orchestrators automates task executions and monitors TF components. One of the largest TFX Orchestrators is Apache Beam. Apache Beam is the unified batch and stream distributed API which acts as an abstraction layer to run on top of the distributed processing framework. This allows you to work on diverse backends such as Apache Spark, Local, Dataflow, etc.
-### The StatisticsGen TFX pipeline component
+### The ExampleGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
 
 ### The StatisticsGen TFX Pipeline Component
