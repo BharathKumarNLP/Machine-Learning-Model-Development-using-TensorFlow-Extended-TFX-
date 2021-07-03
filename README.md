@@ -3,9 +3,15 @@
 ### What is TensorFlow Extended?
 Machine learning (ML) workflows include steps to prepare and analyze data, train and evaluate models, deploy trained models to production, track ML artifacts and understand their dependencies, etc. Managing these steps in an ad-hoc manner can be difficult and time-consuming.
 
-MLOps is the practice of applying DevOps practices to help automate, manage, and audit ML workflows. AI Platform Pipelines helps you implement MLOps by providing a platform where you can orchestrate the steps in your workflow as a pipeline. ML pipelines are portable and reproducible definitions of ML workflows.
+MLOps is the practice of applying DevOps practices to help automate, manage, and audit ML workflows. AI Platform Pipelines helps you implement MLOps by providing a platform where you can orchestrate the steps in your workflow as a pipeline. ML pipelines are portable and reproducible definitions of ML workflows.<br>
 
 AI Platform Pipelines makes it easier to get started with MLOps by saving you the difficulty of setting up Kubeflow Pipelines with TensorFlow Extended (TFX). Kubeflow Pipelines is an open source platform for running, monitoring, auditing, and managing ML pipelines on Kubernetes. TFX is an open source project for building ML pipelines that orchestrate end-to-end ML workflows.
+TFX provides a bunch of frameworks, libraries, and components for defining, launching, and monitoring machine learning models in production. The components available in TFX let you build efficient ML pipelines specifically designed to scale from the start. TFX makes MLOps easier through all phases of the machine learning project life cycle from prototyping to production. 
+It is designed to orchestrate your machine learning workflow with portability to multiple environments and orchestration frameworks in mind.
+This includes:- 
+* Apache Airflow, 
+* Apache Beam, and 
+* Kubeflow. 
 ### TensorFlow Extended (TFX) 
 TensorFlow Extended (TFX) is a Google-production-scale machine learning platform based on TensorFlow. TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
@@ -20,6 +26,7 @@ MLOps is the practice of applying DevOps practices to help automate, manage, and
 Track ML artifacts and understand their dependencies.
 ### TFX Orchestrators
 Orchestrators automates task executions and monitors TF components. One of the largest TFX Orchestrators is Apache Beam. Apache Beam is the unified batch and stream distributed API which acts as an abstraction layer to run on top of the distributed processing framework. This allows you to work on diverse backends such as Apache Spark, Local, Dataflow, etc.
+
 ### The ExampleGen TFX pipeline component
 The ExampleGen TFX Pipeline component ingests data into TFX pipelines. It consumes external files/services to generate Examples which will be read by other TFX components. 
 
