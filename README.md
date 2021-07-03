@@ -43,15 +43,13 @@ The Transform TFX pipeline component performs feature engineering on tf.Examples
 * Consumes: tf.Examples from an ExampleGen component, and a data schema from a SchemaGen component.
 * Emits: A SavedModel to a Trainer component, pre-transform and post-transform statistics.
 
+### The Tuner TFX Pipeline Component
+The Tuner component tunes the hyperparameters for the model. The Tuner component tunes the hyperparameters for the model. The Tuner component is the newest TFX effects component and makes extensive use of the Python Keras tuner API for tuning hyper parameter. As inputs, the tuner component takes in the transformed data in transform graph artifacts, as outputs, the tuner components output a hyper parameter artifact. You can modify the trainer configurations to directly ingest the best hyper parameters, found from the most recent tuner run. 
 ### The Pusher TFX Pipeline Component
 The Pusher component is used to push a validated model to a deployment target during model training or re-training. Before the deployment, Pusher relies on one or more blessings from other validation components to decide whether to push the model or not.
 
 * Evaluator blesses the model if the new trained model is "good enough" to be pushed to production.
 * (Optional but recommended) InfraValidator blesses the model if the model is mechanically servable in a production environment.
-
-### The Tuner TFX Pipeline Component
-The Tuner component tunes the hyperparameters for the model. The Tuner component tunes the hyperparameters for the model. The Tuner component is the newest TFX effects component and makes extensive use of the Python Keras tuner API for tuning hyper parameter. As inputs, the tuner component takes in the transformed data in transform graph artifacts, as outputs, the tuner components output a hyper parameter artifact. You can modify the trainer configurations to directly ingest the best hyper parameters, found from the most recent tuner run. 
-
 ### The InfraValidator TFX Pipeline Component
 InfraValidator is a TFX component that is used as an early warning layer before pushing a model into production. The name "infra" validator came from the fact that it is validating the model in the actual model serving "infrastructure". If Evaluator is to guarantee the performance of the model, InfraValidator is to guarantee the model is mechanically fine and prevents bad models from being pushed.
 
