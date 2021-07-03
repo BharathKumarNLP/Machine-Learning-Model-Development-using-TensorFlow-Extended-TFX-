@@ -1,6 +1,11 @@
 ## Machine Learning Model Development using TensorFlow Extended(TFX)
 ![image](https://user-images.githubusercontent.com/23136710/124017377-51ef9900-d9ef-11eb-993b-f97738ce10ed.png)
+### What is TensorFlow Extended?
+Machine learning (ML) workflows include steps to prepare and analyze data, train and evaluate models, deploy trained models to production, track ML artifacts and understand their dependencies, etc. Managing these steps in an ad-hoc manner can be difficult and time-consuming.
 
+MLOps is the practice of applying DevOps practices to help automate, manage, and audit ML workflows. AI Platform Pipelines helps you implement MLOps by providing a platform where you can orchestrate the steps in your workflow as a pipeline. ML pipelines are portable and reproducible definitions of ML workflows.
+
+AI Platform Pipelines makes it easier to get started with MLOps by saving you the difficulty of setting up Kubeflow Pipelines with TensorFlow Extended (TFX). Kubeflow Pipelines is an open source platform for running, monitoring, auditing, and managing ML pipelines on Kubernetes. TFX is an open source project for building ML pipelines that orchestrate end-to-end ML workflows.
 ### TensorFlow Extended (TFX) 
 TensorFlow Extended (TFX) is a Google-production-scale machine learning platform based on TensorFlow. TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
