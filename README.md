@@ -24,6 +24,7 @@ MLOps is the practice of applying DevOps practices to help automate, manage, and
 * Train and evaluate a model.
 *  Deploy trained models to production.
 Track ML artifacts and understand their dependencies.
+
 ### TFX Orchestrators
 Orchestrators automates task executions and monitors TF components. One of the largest TFX Orchestrators is Apache Beam. Apache Beam is the unified batch and stream distributed API which acts as an abstraction layer to run on top of the distributed processing framework. This allows you to work on diverse backends such as Apache Spark, Local, Dataflow, etc.
 ### How it works
