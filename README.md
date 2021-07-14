@@ -11,6 +11,7 @@ This includes:-
 * Apache Airflow, 
 * Apache Beam, and 
 * Kubeflow. 
+
 ### TensorFlow Extended (TFX) 
 TensorFlow Extended (TFX) is a Google-production-scale machine learning platform based on TensorFlow. TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines.</br>
 A TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. Components are built using TFX libraries which can also be used individually.
